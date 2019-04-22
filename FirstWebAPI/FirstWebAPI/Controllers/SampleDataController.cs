@@ -11,7 +11,7 @@ namespace FirstWebAPI.Controllers
     {
         private static string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Test"
+            "Freezing", "Bracing", "Chilly", "Cool", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Test"
         };
 
         [HttpGet("[action]")]
@@ -31,6 +31,7 @@ namespace FirstWebAPI.Controllers
             public string DateFormatted { get; set; }
             public int TemperatureC { get; set; }
             public string Summary { get; set; }
+            public char WeatherType { get; set; }
 
             public int TemperatureF
             {
